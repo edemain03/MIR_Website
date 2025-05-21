@@ -1,0 +1,424 @@
+/* styles.css */
+
+/* --- login button --------------------------------------------------- */
+.btn-auth-login {
+  background-color:#6e430e !important;
+  border-color:#030303 !important;
+  color:#fff;
+}
+.btn-auth-login:hover,
+.btn-auth-login:focus {
+  background-color:#6e430e;
+  border-color:#6e430e;
+}
+
+/* --- create-account button ----------------------------------------- */
+.btn-auth-create {
+  background-color:#6e430e !important;   /* pick any colour you want */
+  border-color:#030303 !important;
+  color:#fff;
+}
+.btn-auth-create:hover,
+.btn-auth-create:focus {
+  background-color:#6e430e;
+  border-color:#6e430e;
+}
+
+.btn-auth-close {
+  background-color: #6e430e !important;
+  border-color: #030303 !important;
+}
+
+.btn-auth-close:hover,
+.btn-auth-close:focus {
+  background-color: #6e430e;
+  border-color: #6e430e;
+}
+
+.action-button:active, .shiny-download-link:active {
+    animation: clickAnimation 0.2s;
+    }
+    
+    @keyframes clickAnimation {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.9);}
+    100% {transform: scale(1);}
+    }
+    
+    body {
+      padding-top: 80px !important; /* or height of your navbar + extra margin */
+    }
+    
+        /* Make sure navbar sits on top of everything (so modal dialogs don't hide behind it) */
+    .navbar {
+      z-index: 1000 !important;
+    }
+    
+    /* Container for the error/instructions buttons on the nav */
+    .top-right-btn {
+      float: right;        /* float or flex to the right */
+      display: flex;
+      align-items: center; /* vertically center the buttons */
+      margin-right: 20px;  /* optional spacing from right edge */
+    }
+    
+    /* Slight spacing between the two buttons themselves */
+    .top-right-btn > * {
+      margin-left: 10px;
+    }
+    
+    .container,
+    .container-fluid,
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+      --bs-gutter-x: 0 !important;
+    }
+  
+        /* Remove horizontal gutters */
+    .navbar .container-fluid {
+      --bs-gutter-x: 0 !important;
+      /* Add a bit of rounding */
+      border-radius: 8px;
+      /* Optional: Add margin so the corners are visible instead of flush with the page edges */
+      margin: 0 16px;
+    }
+
+  
+    /* Ensure the navbar uses flexbox */
+    .navbar-nav {
+      display: flex !important;
+      flex-wrap: nowrap;
+    }
+    
+    /* Make all nav-items start with order 0 */
+    .navbar-nav .nav-item {
+      order: 0;
+    }
+
+    /* Put the 'Home' item first by assigning it a lower order */
+    .navbar-nav .nav-item[data-value='home'] {
+      order: -1 !important;
+    }
+    
+    /* Reset margin for auto-spacing */
+    .navbar-nav {
+      margin-left: 0 !important;
+    }
+  
+    /* Existing styles */
+    .sidebar .nav > .nav-item {
+      display: block;
+      width: 100%;
+    }
+    
+    .sidebar .nav > .nav-item .active {
+      background-color: #8a8787;
+      color: #000;
+    
+    }
+
+    .sidebar .nav > .nav-item a {
+      padding: 10px 15px;
+      display: block;
+      color: #333;
+    }
+    
+    .sidebar .nav > .nav-item a:hover {
+      background-color: #8a8787;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .sidebar {
+      height: 100vh;
+      overflow-y: auto;
+
+    }
+    
+    .sidebar .card {
+     /* --bs-card-bg: #8a8787; */
+    }
+    
+    .navbar {
+      --bslib-navbar-default-bg: #bfbebd !important;
+      --bs-navbar-active-color: #542b2b;
+      max-height: 80px;
+      border-radius: 8px;
+    }
+
+    .navbar-header .navbar-brand {
+      /* Make .navbar-brand a flex container so it can center its children */
+      display: flex;
+      align-items: center;
+      height: 60px; 
+    }
+    
+    /* Target just the <img> inside the .navbar-brand div */
+    .navbar-header .navbar-brand img {
+      height: 50px;        
+      margin-top: 0;  
+      margin-bottom: 0;
+      margin-right: 20px;  
+    }
+
+
+      .nav-item > .nav-link {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    /* New alignment styles */
+    .navbar-nav {
+      margin-left: auto !important;
+    }
+
+    .navbar-nav .nav-item {
+       /* Adjust spacing between items */
+      margin-right: 10px;
+    }
+    
+    .nav-link:not(.active),
+    .nav-tabs>li>a:not(.active),
+    .nav-pills>li>a:not(.active),
+    :where(ul.nav.navbar-nav>li)>a:not(.active) {
+      color: #030303 !important;
+    }
+    
+    .nav-tabs .nav-link {
+      border-radius: 8px !important; /* Adjust to your preferred radius */
+    }
+    
+    /* CSV vs Opus Button, Data Preprocessing */
+    .btn-outline-primary {
+    --bs-btn-color: #030303;
+    --bs-btn-active-bg: #bfbebd;
+    }
+    
+    .progress-bar {
+    color: #030303;
+    background-color: #bfbebd
+    }
+    
+    .nav-pills {
+    --bs-nav-pills-link-active-bg: #CA5202;
+    }
+    
+    .nav-pills .nav-link {
+      border-radius: 15px;
+    }
+    
+    .nav-pills .nav-link {
+      color: #020202;
+    }
+
+    .card {
+      border-radius: 8px;
+    }
+
+    .button {
+      border-radius: 8px;
+    }
+
+    .btn-default {
+    
+      background-color: #582f05;
+      border-radius: 8px;
+    }
+
+    /* logos start at 40 px high … */
+.logo-brand { max-height: 40px; height: auto; }
+
+/* … shrink a bit on tablets … */
+@media (max-width: 991.98px) {  /* < lg */
+  .logo-brand { max-height: 32px; }
+}
+
+/* … and a bit more on phones */
+@media (max-width: 575.98px) {  /* < sm */
+  .logo-brand { max-height: 26px; }
+}
+    
+/* ---- 1 · The strip itself ---- */
+.logo-strip {
+  overflow: hidden;          /* <-- the magic: clip from the right */
+  flex: 1 1 auto;            /* grow/shrink before nav buttons */
+  min-width: 0;              /* allow it to shrink past its content width */
+}
+
+/* ---- 2 · Every logo can shrink a teeny bit, but never the nav links ---- */
+.logo-brand                { flex: 0 0 auto; }   /* may be clipped */
+#page_navbar .nav-link,
+#page_navbar .dropdown-toggle { flex: 0 0 auto; flex-shrink: 0; }
+
+/* ---- 3 · Optional: a gentle responsive height tweak (keeps aspect ratio) ---- */
+@media (max-width: 991.98px) { .logo-brand { height: 32px; } }
+@media (max-width: 575.98px) { .logo-brand { height: 26px; } }
+
+/* ---- 4 · Push the nav group all the way to the right at narrower widths ---- */
+@media (max-width: 1100px) { #page_navbar .navbar-nav { order: -1; } }
+
+/* ---- A · keep nav buttons un-shrinkable, let the strip flex ---- */
+.logo-strip                     { flex: 1 1 auto; min-width: 0; overflow: hidden; }
+
+#page_navbar .nav-link,
+#page_navbar .dropdown-toggle   { flex: 0 0 auto; }
+
+/* ---- B · discrete “remove-one-by-one” break-points ---- */
+@media (max-width: 1100px) { .logo-usda { display: none !important; } }
+@media (max-width: 650.98px) { .logo-uw   { display: none !important; } }
+@media (max-width: 450.98px)  { .logo-osu  { display: none !important; } }
+
+
+/* (optional) still allow them to *shrink* a little before hiding) */
+@media (max-width: 991.98px)  { .logo-brand { height: 32px; } }
+@media (max-width: 575.98px)  { .logo-brand { height: 26px; } }
+
+/* keep everything in #page_navbar on **one** flex row */
+#page_navbar .navbar { flex-wrap: nowrap; }
+
+#page_navbar .navbar-nav{
+  flex: 0 0 260px;      /* 260 px ≈ 3 buttons + padding – adjust if you add more */
+  max-width: 260px;     /* don’t let it contract */
+  white-space: nowrap;  /* keep Home  Tools  ◉ on one line */
+}
+
+/* every link inside stays inline, no flex-shrink */
+#page_navbar .navbar-nav .nav-link,
+#page_navbar .navbar-nav .dropdown-toggle{
+  flex: 0 0 auto;
+}
+
+/* optional – tidy up the little gaps between the three items */
+#page_navbar .navbar-nav .nav-item{ margin-right: 8px; }
+   
+
+/* ============================================================
+   NAV-BUTTON “BRICK” – never wrap, but does shrink a little
+   ============================================================ */
+
+/* 0 · base: treat the <ul.navbar-nav> as one inline-block that can’t wrap */
+#page_navbar .navbar-nav{
+  display:inline-flex !important;   /* single text line, not a flex row that wraps */
+  align-items:center;
+  flex-shrink:0;                    /* never drop to next row */
+  white-space:nowrap;               /* keep the 3 anchors side-by-side */
+  gap:14px;                         /* nicer than margin-right so we can scale easily */
+}
+
+/* keep every individual link from flex-wrapping as well */
+#page_navbar .navbar-nav .nav-link,
+#page_navbar .navbar-nav .dropdown-toggle{
+  flex:0 0 auto;
+  white-space:nowrap;
+}
+
+/* ------------------------------------------------------------
+   1st squeeze – small tablets / large phones  (≤ 800 px)
+   ------------------------------------------------------------ */
+@media (max-width:800px){
+  #page_navbar .navbar-nav       { gap:10px; }
+  #page_navbar .navbar-nav .nav-link,
+  #page_navbar .navbar-nav .dropdown-toggle{
+    font-size:0.92rem;           /* 8 % smaller text  */
+    padding:0.45rem 0.55rem;     /* tighter hitbox    */
+  }
+}
+
+/* ------------------------------------------------------------
+   2nd squeeze – phones  (≤ 600 px)
+   ------------------------------------------------------------ */
+@media (max-width:600px){
+  #page_navbar .navbar-nav       { gap:6px;  }
+  #page_navbar .navbar-nav .nav-link,
+  #page_navbar .navbar-nav .dropdown-toggle{
+    font-size:0.85rem;           /* 15 % smaller than normal */
+    padding:0.35rem 0.45rem;
+  }
+}
+
+
+/* ════════════════════════════════════════════════════════════════
+   1 ·  Make the navbar’s container a NO-WRAP flex row
+   ════════════════════════════════════════════════════════════════ */
+   .navbar .container-fluid{
+    display:flex;          /* turn the inner <div> into a flex row          */
+    align-items:center;    /* vertically centre logos & buttons             */
+    flex-wrap:nowrap;      /* NEVER let its children wrap onto a 2nd line    */
+  }
+  
+  /* ════════════════════════════════════════════════════════════════
+     2 ·  Button group (“Home · Tools · ◉”) = right-aligned, one line
+     ════════════════════════════════════════════════════════════════ */
+  #page_navbar{                           /* the <ul> that holds the buttons */
+    display:flex !important;              /* flex row                        */
+    flex-direction:row !important;
+    flex-wrap:nowrap !important;          /* never stack vertically          */
+  
+    margin-left:auto !important;          /* push it to the far right        */
+    align-items:center;
+    gap:14px;                             /* space between the three items   */
+  
+    /* kill stray UL spacing that can push it down */
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+    padding-left:0 !important;
+  }
+  
+  /* hide the <div class="bslib-nav-spacer"> objects that Shiny inserts,
+     because they close the <ul> prematurely and confuse the layout             */
+  #page_navbar .bslib-nav-spacer{ display:none !important; }
+  
+
+  /* ───────────────────────────────────────────────────────────────
+   KEEP ICON + LABEL SIDE-BY-SIDE INSIDE EACH NAV LINK
+   ─────────────────────────────────────────────────────────────── */
+#page_navbar .nav-link,
+#page_navbar .dropdown-toggle{      /* the <a> elements */
+  display:inline-flex !important;   /* lay out contents horizontally      */
+  align-items:center !important;    /* vertically centre icon + text      */
+  white-space:nowrap !important;    /* forbid line-break between them     */
+}
+
+/* tiny gap between icon and text so they don't touch */
+#page_navbar .nav-link svg,
+#page_navbar .dropdown-toggle svg{  /* the <svg> icons */
+  margin-right:4px;
+}
+
+/* ───────────────────────────────────────────────────────────────
+   NAV  DROPDOWN  (Tools / Account) – rounded & page-right aligned
+   ─────────────────────────────────────────────────────────────── */
+   .navbar .dropdown-menu{
+    border-radius:8px !important;        /* 1 · nice round corners      */
+    margin-top:4px !important;           /* small gap below grey bar    */
+  }
+  
+  /* when the menu already has .dropdown-menu-end from bslib,
+     overwrite its 'right' / 'left' so the panel hugs the viewport edge */
+  .navbar .dropdown-menu-end{
+    right:0 !important;                  /* 2 · flush with page’s right */
+    left:auto !important;
+  }
+  
+  /* optional – give the entire menu a subtle shadow so it stands out */
+  .navbar .dropdown-menu{
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+  }
+  
+  /* ───── dropdown: right-aligned with page, directly under navbar ───── */
+.navbar .dropdown-menu.show{
+  right: 0 !important;        /* hug the page’s right edge          */
+  left:  auto !important;      /* cancel any Popper “left” value     */
+  transform: translate(0,0) !important;   /* kill Bootstrap offset  */
+  margin-top: 4px !important;  /* small gap below grey bar           */
+}
+
+/* MIR logo – break free of the 40 px cap and add a bit more space */
+.logo-brand.logo-mir{          /* matches <img class="logo-brand logo-mir …"> */
+  max-height: 60px !important; /* bigger than the 40 px that .logo-brand sets  */
+  height:      60px !important;/* keeps aspect ratio even if inline height=""  */
+  margin-right: 2rem !important; /* wider gap before the next logo             */
+}

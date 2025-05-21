@@ -1,0 +1,22 @@
+analyte_id,analyte_name,analyte_desc
+1,"Aggregate Stability, 0.5-2mm Aggregates",Aggregate stability is the weight percent of 0.5mm - 2mm aggregates remaining after wet sieving.
+5,"Bulk Density, <2mm Fraction, Ovendry","Bulk density, oven dry (105 C) is the weight per unit volume of the <2 mm fraction, with volume measured on oven dry (105 C) natural fabric (clods). It is reported as grams per cubic centimeter on a <2 mm base."
+54,"Carbonate, <2mm Fraction","Carbonate in the < 2mm fraction is measured by CO2 evolution after acid treatment. It is reported as gravimetric percent CaCO3 on a <2 mm base, even though carbonates of Mg, Na, K, and Fe may be present and react with the acid."
+58,"Carbon, Total","Total carbon is a measure of all organic and inorganic nitrogen, including that found in organic minerals."
+94,"Nitrogen, Total","The total (organic+inorganic) nitrogen in a sample supplies inferences on the soil potential to supply nitrogen to plants, and is used to determine C_N_RA and nitrogen distribution in a profile. It is reported as gravimetric percent on a <2 mm base.  Det"
+268,"pH, 1:1 Soil-Water Suspension","The pH, 1:1 soil-water suspension is the pH of a sample measured in distilled water at a 1:1 soil:solution ratio. If wider ratios increase the pH, salts are indicated."
+270,"Phosphorus, Bray-1 Extractable","This is the phosphorus extractable by the Bray-1 method, reported as milligrams per kilogram on a <2 mm base. It is used as an index of plant-available phosphorus. Bray-1 extracts adsorbed P."
+274,"Phosphorus, Olsen Extractable",The Olsen extractable phosphorus is used as an indicator of available phosphorus in calcareous soil materials (pH >6).
+334,Clay,Total clay is the soil separate with <0.002 mm particle diameter. Clay size carbonate is included. Total clay is reported as a weight percent of the <2 mm fraction.
+364,"Electrical Conductivity, Predict, 1:2 (w/w)","The salt predict electrical conductivity is used to determine whether additional salt analyses are needed, and to estimate appropriate dilution ratios for additional tests. It is reported as mmhos per centimeter of a 1:2 soil:water mixture by weight."
+384,"Sulfur, Total","Total sulfur is the sum of organic and inorganic forms, reported as a gravimetric percent on a <2 mm base."
+652,"Phosphorus, Mehlich3 Extractable",The phosphorus extracted by the Mehlich III solution.
+660,"Corrected Gypsum, <2mm",Corrected Gypsum ( Uncorrected Gypsum * Factor)
+723,"CEC, NH4OAc, pH 7.0, 2M KCl displacement","CEC by NH4OAC is the cation exchange capacity of the sample, determined by 1N NH4OAC in a system highly buffered at pH 7.0 The NH4 is displaced by 2M KCl to obtain a solution without solids. It is reported as meq per 100 grams sample, on a <2 mm base."
+725,"Potassium, NH4OAc Extractable, 2M KCl displacement",NH4OAC extractable potassium is the fraction removed by pH 7.0 NH4OAC. It is assumed to represent the exchangeable K. It is reported as meq per 100 grams on a <2 mm base.
+772,"Carbon, pom",The carbon content of the particulate organic matter (<53 micron)
+776,"Carbon, pom mineral",The carbon content of the mineral particulate matter (>53 micron)
+1408,"Carbon, hpom",The carbon content of the particulate organic matter (>53 micron)
+60,"Sand, Total",Total sand is the soil separate with 0.05 to 2.0 mm particle diameter. It is reported a gravimetric percent on a <2 mm base.
+62,"Silt, Total",Total silt is the soil separate with 0.002 to 0.05 mm particle size. It is reported as a gravimetric percent on a <2 mm base.
+728,"Estimated Organic Carbon, CO2",Estimated Organic Carbon based on CO2
